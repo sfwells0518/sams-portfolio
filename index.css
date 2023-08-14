@@ -220,8 +220,13 @@ header {
    
   .nav__link {
     color: inherit;
-    font-weight: var(--fw-reg);
-    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-align: center;
+    }
+
+  .nav-open .hamburger::after {
+    opacity: 0;
     }
   
 }
