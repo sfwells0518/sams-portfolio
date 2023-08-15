@@ -214,19 +214,9 @@ header {
 /*Mobile specific nav-open*/
 
 @media (max-width: 768px) {
-  .nav-open .nav {
-      transform: translateX(0);
-    }
-   
-  .nav__link {
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
-    text-align: center;
-    }
 
-  .nav-open .hamburger::after {
-    opacity: 0;
+  .hamburger {
+    display: none;
     }
   
 }
