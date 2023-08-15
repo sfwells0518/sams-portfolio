@@ -215,6 +215,10 @@ header {
 
 @media (max-width: 768px) {
 
+  .nav-toggle {
+    display: none;
+  }
+
   .hamburger {
     display: none;
     }
