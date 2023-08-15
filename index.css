@@ -209,6 +209,8 @@ header {
 
 .nav-open .nav {
   transform: translateX(80%);
+  z-index: 50;
+
 }
 
 /*Mobile specific nav-open*/
@@ -227,6 +229,7 @@ header {
 
 .nav-open .nav-toggle {
   position: fixed;
+  z-index: 900;
 }
 
 .nav-open .hamburger {
