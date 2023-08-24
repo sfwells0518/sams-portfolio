@@ -7,10 +7,10 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-primary: 'Avenir', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
   --fw-reg: 300;
-  --fw-bold: 900;
+  --fw-bold: 800;
 
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -213,6 +213,14 @@ header {
 
 }
 
+.nav-toggle {
+  display: none;
+}
+  
+.hamburger {
+  display: none;
+}
+
 /*Mobile specific nav-open*/
 
 @media (max-width: 768px) {
@@ -223,7 +231,7 @@ header {
 
   .hamburger {
     display: none;
-    }
+  }
   
 }
 
@@ -454,6 +462,7 @@ header {
 .portfolio__item {
   background: var(--clr-dark);
   position: relative;
+  display: block;
   overflow: hidden;
 }
 
@@ -478,6 +487,70 @@ header {
   transform: scale(1.05);
   opacity: .75;
   background: var(--clr-accent);
+}
+
+.overlay-details {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  color: var(--clr-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__item:hover .overlay-details {
+  opacity: 1;
+}
+
+.portfolio__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-accent);
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.portfolio__item:hover::before {
+  opacity: .87;
+}
+
+.overlay-details h5 {
+  margin-bottom: -1.25em;
+  font-weight: 800;
+  font-size: 1.35rem;
+  text-decoration: underline;
+  text-decoration-color: var(--clr-light);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+.overlay-details h6 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.language-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.overlay-details .language-icon {
+  width: 40px;
 }
 
 /* Footer */
