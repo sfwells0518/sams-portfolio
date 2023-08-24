@@ -126,7 +126,7 @@ h3 {
   /* background: var(--clr-accent); */
   background: #113E21;
   color: var(--clr-light);
-  padding: .25em 1em;
+  padding: .25em 2.1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
