@@ -126,7 +126,7 @@ h3 {
   /* background: var(--clr-accent); */
   background: #113E21;
   color: var(--clr-light);
-  padding: .25em 3.5em;
+  padding: .25em 4em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -540,7 +540,7 @@ header {
 
 .overlay-details h6 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .9rem;
   margin-bottom: 1em;
 }
 
